@@ -232,12 +232,15 @@
                             <i class="fa-regular fa-square-plus"></i>Post Job
                         </a>
                     </li>
+                 </c:if>
+                 <c:if test="${userobj ne null}">
                     <li class="nav-item">
                         <a class="nav-link" href="view_job.jsp">
                             <i class="fa-solid fa-eye"></i>View Job
                         </a>
                     </li>
-                </c:if>
+                    </c:if>
+                
             </ul>
             <form class="d-flex" role="search">
                 <c:if test="${userobj.role eq '' || empty userobj }">
